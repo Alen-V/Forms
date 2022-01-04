@@ -7,11 +7,11 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    function validateForm() {
+    const validateForm = () => {
         return email.length > 0 && password.length > 8;
     }
 
-    function handleSubmit(event) {
+    const handleSubmit = (event) => {
         event.preventDefault();
     }
     return (
